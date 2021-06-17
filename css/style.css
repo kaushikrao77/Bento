@@ -7,39 +7,38 @@
   --fsg: 135px; /* Time and Greetings */
   --fsm: 75px; /* Date */
   --fss: 25px; /* Greetings and Weather widger */
-  --fses: 16px; /* Links List */
+  --fses: 17px; /* Links List */
+
+  /*monkeytype variables*/
+  --bg-color: #242933;
+  --caret-color: #d8dee9;
+  --main-color: #d8dee9;
+  --sub-color: #617b94;
+  --text-color: #d8dee9;
+  --error-color: #bf616a;
 
   /* Light theme  */
-  --accent: #4b8ec4; /* Hover color */
-  --bg: #f5f5f5; /* Background color */
-  --sbg: #e4e6e6; /* Cards color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #3a3a3a; /* Sceondary Foreground color */
-
-  /* Image background  */
-
-  /* Uncoment this section to get the 
-    image wallpaper. You can also 
-    change the --imgcol value 
-    to make the filter to your own */
-
-  /* --imgbg: url(/img/wal.jpg); */
+  --accent: var(--error-color); /* Hover color */
+  --bg: var(--bg-color); /* Background color */
+  --sbg: var(--text-color); /* Cards color */
+  --fg: var(--sub-color); /* Foreground color */
+  --sfg: var(--bg-color); /* Secondary Foreground color */
   --imgcol: linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.7)
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
   ); /* Filter color */
 }
 
 /* Dark theme  */
 .darktheme {
   --accent: #4b8ec4; /* Hover color */
-  --bg: #19171a; /* Background color */
-  --sbg: #201e21; /* Cards color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #3a3a3a; /* Secondary Foreground color */
+  --bg: #f5f5f5; /* Background color */
+  --sbg: #e4e6e6; /* Cards color */
+  --fg: #3a3a3a; /* Foreground color */
+  --sfg: #3a3a3a; /* Sceondary Foreground color */
   --imgcol: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
   ); /* Filter color */
 }
 
@@ -49,8 +48,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  transition: 0.2s ease-in-out;
+  font-family: "Rubik", sans-serif;
+  transition: 0.1s ease-in-out;
 }
 
 body {
@@ -196,7 +195,7 @@ body {
 .buttonLink__icon {
   width: 23px;
   height: 23px;
-  color: var(--fg);
+  color: var(--sfg);
 }
 
 .buttonLink__link-1 {
@@ -248,21 +247,21 @@ body {
   margin-top: 30px;
   margin-bottom: 10px;
   width: 30px;
-  color: var(--fg);
+  color: var(--sfg);
   height: 30px;
 }
 .list__link {
   text-decoration: none;
   font-size: var(--fses);
-  color: var(--fg);
+  color: var(--sfg);
   margin-top: 1px;
   padding: 6px 12px;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .list__link:hover {
-  background-color: var(--accent);
-  color: var(--sfg);
+  color: var(--accent);
+  /* color: var(--sfg); */
 }
 
 /* M E D I A - Q U E R I E S */
